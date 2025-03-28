@@ -1,0 +1,39 @@
+diff -Naur uboot-org/oem/ami/fmh/cmd_fmh.c uboot/oem/ami/fmh/cmd_fmh.c
+--- uboot-org/oem/ami/fmh/cmd_fmh.c	2025-01-06 07:49:56.783592774 +0530
++++ uboot/oem/ami/fmh/cmd_fmh.c	2025-01-06 07:52:56.000000000 +0530
+@@ -308,11 +308,12 @@
+     {
+         flash[cs] = *spi_flash_probe(CONFIG_ENV_SPI_BUS, cs,
+                             CONFIG_ENV_SPI_MAX_HZ, CONFIG_ENV_SPI_MODE);
+-	if (&flash[cs] == NULL)
+-        {
+-            printf("\nspi_flash_probe failed on cs = %d\n",cs);
+-            continue;
+-        }
++	/* the comparison will always evaluated as `false` for the pointer operand */
++	//if (flash[cs] != NULL)
++       	//{
++        //	printf("\nspi_flash_probe failed on cs = %d\n",cs);
++        //    	continue;
++       	//}
+ 
+ 	flashsize = flash[cs].size;
+         SectorSize = 0x10000; //flash->erase_size;//0x10000;//flash->sector_size;
+@@ -1016,11 +1017,12 @@
+     {
+         flashspi[cs]= *spi_flash_probe(CONFIG_ENV_SPI_BUS, cs,
+                       CONFIG_ENV_SPI_MAX_HZ, CONFIG_ENV_SPI_MODE);
+-        if (&flashspi[cs] == NULL)
+-        {
+-            printf("\nspi_flash_probe failed for cS=%d\n",cs);
+-            continue;
+-        }
++	/* the comparison will always evaluated as `false` for the pointer operand */
++        //if (&flashspi[cs] == 0)
++        //{
++        //    printf("\nspi_flash_probe failed for cS=%d\n",cs);
++        //    continue;
++        //}
+ #if defined (CONFIG_SPX_FEATURE_HW_FAILSAFE_BOOT)  && defined(CONFIG_SPX_FEATURE_DEDICATED_SPI_FLASH_BANK)
+         /* Boot from first bank when alternative boot occurs
+         * therefore determine bank 1 is broken or not.

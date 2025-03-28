@@ -1,0 +1,87 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: inotify-tools
+Upstream-Contact: https://github.com/inotify-tools/inotify-tools/issues
+Source: https://github.com/rvoicilas/inotify-tools
+
+Files: *
+Copyright: 2005      John McCutchan
+           2006      Rohan McGovern <rohan@mcgovern.id.au>
+           2009-2018 Radu Voicilas <radu.voicilas@users.noreply.github.com>
+           2014      Enrico Maria Crisostomo <enrico.m.crisostomo@gmail.com>
+           2020-2022 Eric Curtin <ecurtin@redhat.com>
+License: GPL-2
+Comment: the data about Radu, Enrico and Eric was taken from commits in GitHub.
+
+Files: libinotifytools/src/redblack.c
+       libinotifytools/src/redblack.h
+Copyright: 2000 Damian Ivereigh
+License: LGPL-2.1+
+
+Files: t/aggregate-results.sh
+       t/Makefile
+       t/sharness.sh
+Copyright: 2005-2012 Git project
+           2005-2012 Junio C Hamano
+           2011-2012 Mathias Lafeldt
+License: GPL-2+
+
+Files: debian/*
+Copyright: 2006-2007 Peter Makholm <peter@makholm.net>
+           2009-2012 Ryan Niebur <ryan@debian.org>
+           2012      Moritz Muehlenhoff <jmm@debian.org>
+           2017      Adrian Bunk <bunk@debian.org>
+           2017-2019 Dmitry Bogatov <KAction@gnu.org>
+           2020      Paul Gevers <elbrus@debian.org>
+           2021-2023 Joao Eriberto Mota Filho <eriberto@debian.org>
+License: GPL-2+
+
+License: GPL-2
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; version 2 of the License.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <https://www.gnu.org/licenses/>
+Comment:
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+
+License: LGPL-2.1+
+ This package is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 2.1 of the License, or (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public License
+ along with this program. If not, see <https://www.gnu.org/licenses/>.
+Comment:
+ On Debian systems, the complete text of the GNU Lesser General
+ Public License can be found in "/usr/share/common-licenses/LGPL-2.1".
+
+License: GPL-2+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <https://www.gnu.org/licenses/>
+Comment:
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+

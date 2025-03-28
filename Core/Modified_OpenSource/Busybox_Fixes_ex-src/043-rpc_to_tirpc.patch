@@ -1,0 +1,11 @@
+diff -Naur busybox.org/Makefile busybox/Makefile
+--- busybox.org/Makefile	2013-06-29 11:00:18.000000000 -0400
++++ busybox/Makefile	2014-08-01 14:24:58.415831790 -0400
+@@ -316,6 +316,7 @@
+ CFLAGS_KERNEL	=
+ AFLAGS_KERNEL	=
+ 
++CFLAGS		:= $(CFLAGS) -I$(objtree)/../../target/usr/include/tirpc
+ 
+ # Use LINUXINCLUDE when you must reference the include/ directory.
+ # Needed to be compatible with the O= option
